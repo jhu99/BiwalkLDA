@@ -1,4 +1,4 @@
-function [result_dis,result_mic]=gKernel(nd,nm,inter_lncdis)
+function [result_dis,result_mic]=gKernel(nl,nd,inter_lncdis)
 %gKernel compute Gaussian interaction profile kernel
 %   Usage:  [result_lnc,result_dis]=gKernel(nl,nd,inter_lncdis)
 %	Inputs:
@@ -10,21 +10,21 @@ function [result_dis,result_mic]=gKernel(nd,nm,inter_lncdis)
 %			result_lnc: Gaussian interaction profile kernel of lncRNAs
 %			result_dis: Gaussian interaction profile kernel of diseases
 
-    for i=1:nd
+    for i=1:nl
         sl(i)=norm(inter_lncdis(i,:))^2;
     end
-    gamal=nd/sum(sl')*1;
-    for i=1:nd
-        for j=1:nd
+    gamal=nl/sum(sl')*1;
+    for i=1:nl
+        for j=1:nl
             pkl(i,j)=exp(-gamal*(norm(inter_lncdis(i,:)-inter_lncdis(j,:)))^2);
         end
     end        
-    for i=1:nm
+    for i=1:nd
         sd(i)=norm(inter_lncdis(:,i))^2;
     end
-    gamad=nm/sum(sd')*1; 
-    for i=1:nm
-        for j=1:nm
+    gamad=nd/sum(sd')*1; 
+    for i=1:nd
+        for j=1:nd
             pkd(i,j)=exp(-gamad*(norm(inter_lncdis(:,i)-inter_lncdis(:,j)))^2);
         end
     end 
