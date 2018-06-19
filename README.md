@@ -1,6 +1,9 @@
 Type: Package
+
 Title: Prediction of lncRNA-disease associations based on Bi-random walk
-=================
+
+########################################################################
+
 Files:
 
 1.Dataset
