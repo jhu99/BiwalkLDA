@@ -1,19 +1,19 @@
 Type: Package
 
-Title: Prediction of lncRNA-disease associations based on Bi-random walk
+Title: Identification of lncRNA-disease association using bi-random walks
 ====================
 
 Files:
 
 1.Dataset
 
-disease_Name.txt store the name of all the diseases
+disease_Name.txt：The name of all the diseases
 
-lncRNA_Name.txt store the name of all the lncRNA-disease
+lncRNA_Name.txt：The name of all the lncRNA-disease
 
-interMatrix.mat store known lncRNA-disease associations
+interMatrix.mat：Known lncRNA-disease associations
 
-disSim_Jaccard.mat sore disease similairty calculate by gene ontology annotations information
+disSim_Jaccard.mat：Disease similairty calculate by gene ontology annotations information
 
 2.Code
 
