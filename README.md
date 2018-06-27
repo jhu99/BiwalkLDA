@@ -39,4 +39,12 @@ Similarity.m: Calculate Gaussian interaction profile kernel similarity for disea
 
 normFun.m: Laplacian normalization
 ###########################################################################################
-This section introduces functions of different files. 
+Run BiWalkLDA 
+
+1.Download souce code from https://github.com/screamer/biwalk
+
+2.Open MATLAB and enter the folder ./Code
+
+3.Run command predict_result = BiWalkLDA(alpha, beta, left, right), predict_result is the final result. The higher the value of predict_result(i, j), the higher the possibility of the existence of potential association between lncRNA l(i) and disease d(j).
+
+Notice: the path of the association data can be change in BiWalkLDA.m 
