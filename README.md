@@ -16,11 +16,8 @@ You should have received a copy of the GNU General Public License along with thi
 
 Title: Identification of lncRNA-disease association using bi-random walks
 ====================
-Description This file is README file of the package of NetCoffee2, developed by Yiqun Gao.
 ###########################################################################################
 This section introduces functions of different files. 
-
-Files:
 
 1.Dataset
 
@@ -36,9 +33,10 @@ disSim_Jaccard.mat：Disease similairty calculate by gene ontology annotations i
 
 BiWalkLDA.m: BiwalkLDA framework to predict potential lncRNA-disease association
 
-birandom.m: bi-random walk algorithm
+birandom.m: Bi-random walk algorithm
 
-Similarity.m: Gaussian interaction profile kernel similarity for disease and lncRNA
+Similarity.m: Calculate Gaussian interaction profile kernel similarity for disease and lncRNA
 
 normFun.m: Laplacian normalization
 ###########################################################################################
+This section introduces functions of different files. 
