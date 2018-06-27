@@ -39,7 +39,7 @@ Similarity.m: Calculate Gaussian interaction profile kernel similarity for disea
 
 normFun.m: Laplacian normalization
 ###########################################################################################
-Run BiWalkLDA 
+This section introduces how to run BiWalkLDA to make prediction
 
 1.Download souce code from https://github.com/screamer/biwalk
 
