@@ -41,7 +41,7 @@ normFun.m: Laplacian normalization
 ###########################################################################################
 This section introduces how to run BiWalkLDA to make prediction
 
-1.Download souce code from https://github.com/screamer/biwalk
+1.Download souce code from https://github.com/screamer/BiwalkLDA
 
 2.Open MATLAB and enter the folder ./Code
 
