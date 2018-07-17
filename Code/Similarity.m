@@ -1,4 +1,4 @@
-function [result_dis,result_mic]=gKernel(nl,nd,inter_lncdis)
+function [result_lnc,result_dis]=gKernel(nl,nd,inter_lncdis)
 %gKernel compute Gaussian interaction profile kernel
 %   Usage:  [result_lnc,result_dis]=gKernel(nl,nd,inter_lncdis)
 %	Inputs:
@@ -29,8 +29,8 @@ function [result_dis,result_mic]=gKernel(nl,nd,inter_lncdis)
         end
     end 
  
-    result_dis=pkl;
-    result_mic=pkd;
+    result_lnc=pkl;
+    result_dis=pkd;
 end
    
 
