@@ -16,7 +16,7 @@ function [Biwalk_recover] = BiWalkLDA(alpha, beta, left, right)
     [nl,nd]=size(LD);
     [kl, kd] = Similarity(nl, nd, interaction);
     kd = dissim * alpha +(1-alpha)*kd;
-    lncSim = kd;
+    lncSim = kl;
     
 %% complete interaction information for a new lncRNA
     for i=1:nl

@@ -1,9 +1,4 @@
-function [Rt] = birandom(interaction, kl,kd, alpha,l,r)
-    %[nd, nm] = size(interaction);
-    %clear temp
-    %t=0.15;
-    %[kd, km] = Similarity(nd, nm, interaction);
-    %km = dis_sim * t +(1-t)*km;
+function [Rt] = birandom(interaction, kl, kd, alpha, l, r)
     normWdd = normFun(kd);
     normWrr = normFun(kl);
     R0 = interaction/sum(interaction(:));
