@@ -1,6 +1,4 @@
-% BiWalkLDA: Prediction of lncRNA-disease associations based on bi-random
-% walk
-%  
+% BiWalkLDA: Identification of lncRNA-disease association using bi-random walks
 %%%%%%%%%%
 %   interMatrix.mat: an n*m association matrix between lncRNAs and diseases, n is 
 %the number of lncRNAs, and m is the number of diseases
@@ -34,7 +32,7 @@ function [Biwalk_recover] = BiWalkLDA(alpha, beta, left, right)
             end
         end
     end
-    %% extract feature vectors of lncRNAs and diseases
+%% Predict potential association
     Biwalk_recover = birandom(interaction,kd, kl, beta, left, right); 
 end
    

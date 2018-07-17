@@ -1,6 +1,5 @@
 function [result_lnc,result_dis]=gKernel(nl,nd,inter_lncdis)
 %gKernel compute Gaussian interaction profile kernel
-%   Usage:  [result_lnc,result_dis]=gKernel(nl,nd,inter_lncdis)
 %	Inputs:
 %			nl: the number of lncRNAs
 %			nd:	the number of diseases

@@ -6,7 +6,7 @@ function [Rt] = birandom(interaction, kl, kd, alpha, l, r)
     for t=1:max(l,r)
       ftl = 0;
       ftr = 0;
-      %random walk on the microbe similarity network
+      %random walk on the lncRNA similarity network
       if(t<=l)
          nRtleft = alpha * Rt * normWrr + (1-alpha)*R0;
          ftl = 1;
@@ -16,7 +16,6 @@ function [Rt] = birandom(interaction, kl, kd, alpha, l, r)
          nRtright = alpha *  normWdd * Rt + (1-alpha)*R0;
          ftr = 1;
       end
-      %Rt: predictive association scores between each microbe-disease pair
       Rt =  (ftl*nRtleft + ftr*nRtright)/(ftl + ftr);
     end
 end
